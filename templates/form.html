@@ -1,0 +1,112 @@
+<html>
+<body>
+    <h1>WelCome To Breast Cancer Prediction</h1>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+
+    <div class="form-group">
+        <label for="mean_radius">mean radius:</label>
+        <input type="text" id="mean_radius" name="mean_radius" placeholder="Enter mean radius ">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_texture">mean texture:</label>
+        <input type="text" id="mean_texture" name="mean_texture" placeholder="Enter mean texture">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_smoothness">mean smoothness:</label>
+        <input type="text" id="mean_smoothness" name="mean_smoothness" placeholder="Enter mean smoothness">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_compactness">mean compactness:</label>
+        <input type="text" id="mean_compactness" name="mean_compactness" placeholder="Enter mean compactness">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_concavity">mean concavity:</label>
+        <input type="text" id="mean_concavity" name="mean_concavity" placeholder="Enter mean concavity">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_symmetry">mean symmetry:</label>
+        <input type="text" id="mean_symmetry" name="mean_symmetry" placeholder="Enter mean symmetry">
+    </div>
+    
+    <div class="form-group">
+        <label for="mean_fractal_dimension">mean fractal dimension:</label>
+        <input type="text" id="mean_fractal_dimension" name="mean_fractal_dimension" placeholder="Enter mean fractal dimension">
+    </div>
+    
+    <div class="form-group">
+        <label for="radius_error">radius error:</label>
+        <input type="text" id="radius_error" name="radius_error" placeholder="Enter radius error">
+    </div>
+    
+    <div class="form-group">
+        <label for="texture_error">texture error:</label>
+        <input type="text" id="texture_error" name="texture_error" placeholder="Enter texture error">
+    </div>
+    
+    <div class="form-group">
+        <label for="smoothness_error">smoothness error:</label>
+        <input type="text" id="smoothness_error" name="smoothness_error" placeholder="Enter smoothness error">
+    </div>
+    
+    <div class="form-group">
+        <label for="compactness_error">compactness error:</label>
+        <input type="text" id="compactness_error" name="compactness_error" placeholder="Enter compactness error">
+    </div>
+    
+    <div class="form-group">
+        <label for="concavity_error">concavity error:</label>
+        <input type="text" id="concavity_error" name="concavity_error" placeholder="Enter concavity error">
+    </div>
+    
+    <div class="form-group">
+        <label for="concave_points_error">concave points error:</label>
+        <input type="text" id="concave_points_error" name="concave_points_error" placeholder="Enter concave points error">
+    </div>
+    
+    <div class="form-group">
+        <label for="symmetry_error">symmetry error:</label>
+        <input type="text" id="symmetry_error" name="symmetry_error" placeholder="Enter symmetry error">
+    </div>
+    
+    <div class="form-group">
+        <label for="fractal_dimension_error">fractal dimension error:</label>
+        <input type="text" id="fractal_dimension_error" name="fractal_dimension_error" placeholder="Enter fractal dimension error">
+    </div>
+    
+    <div class="form-group">
+        <label for="worst_smoothness">worst smoothness:</label>
+        <input type="text" id="worst_smoothness" name="worst_smoothness" placeholder="Enter worst smoothness">
+    </div>
+    
+    <div class="form-group">
+        <label for="worst_compactness">worst compactness:</label>
+        <input type="text" id="worst_compactness" name="worst_compactness" placeholder="Enter worst compactness">
+    </div>
+    
+    <div class="form-group">
+        <label for="worst_concavity">worst concavity:</label>
+        <input type="text" id="worst_concavity" name="worst_concavity" placeholder="Enter worst concavity">
+    </div>
+    
+    <div class="form-group">
+        <label for="worst_symmetry">worst symmetry:</label>
+        <input type="text" id="worst_symmetry" name="worst_symmetry" placeholder="Enter worst symmetry">
+    </div>
+    
+    <div class="form-group">
+        <label for="worst_fractal_dimension">worst fractal dimension:</label>
+        <input type="text" id="worst_fractal_dimension" name="worst_fractal_dimension" placeholder="Enter worst fractal dimension">
+    </div>
+
+<div style="clear:both;"></div>
+    <input type="submit" value="Submit">
+</form>
+
+<p>Prediction is : {{final_result}}</p>
+</body>
+</html>

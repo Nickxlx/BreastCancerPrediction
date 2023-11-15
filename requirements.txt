@@ -1,0 +1,12 @@
+dill
+dnspython
+database-connect
+Flask
+imblearn
+ipykernel
+Werkzeug
+pymongo
+seaborn
+boto3
+
+-e .
