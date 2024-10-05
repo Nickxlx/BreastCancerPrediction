@@ -57,3 +57,9 @@ python app.py
 ```
 ## for prediction go to 
 http://127.0.0.1:5000/predict
+
+## My learnings 
+
+  - Machine learning model to predict breast cancer malignancy with 95% accuracy using Logistic Regression. 
+  - I gained hands-on experience in file structures, pipelines, and classification problem-solving.
+  - Utilized Scikit-learn for modeling, Flask for UI, and MongoDB for data management.
